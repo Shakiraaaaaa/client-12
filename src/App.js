@@ -14,6 +14,7 @@ import Dashboard from './pages/Dashboard/Dashboard';
 import MyAppointments from './pages/Dashboard/MyAppointments';
 import MyReview from './pages/Dashboard/MyReview';
 import MyHistory from './pages/Dashboard/MyHistory';
+import Users from './pages/Dashboard/Users';
 
 function App() {
   return (
@@ -32,7 +33,9 @@ function App() {
           <Route index element={<MyAppointments></MyAppointments>}></Route>
           <Route path="review" element={<MyReview></MyReview>}></Route>
           <Route path="history" element={<MyHistory></MyHistory>}></Route>
+          <Route path="users" element={<Users></Users>}></Route>
         </Route>
+        <Route path="users" element={<Users></Users>}></Route>
         <Route path="signup" element={<SignUp></SignUp>} />
       </Routes>
       <ToastContainer></ToastContainer>
